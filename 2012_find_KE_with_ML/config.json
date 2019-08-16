@@ -1,14 +1,14 @@
 {
     "data": {
-        "train_dir": "/Users/hongbinren/Documents/Data/iop/burke/train",
+        "train_dir": "/Users/hongbinren/Documents/Data/iop/benchmark/periodic/data/two/train",
         "train_size": 500,
-        "test_dir": "/Users/hongbinren/Documents/Data/iop/burke/test"
+        "test_dir": "/Users/hongbinren/Documents/Data/iop/benchmark/periodic/data/two/test"
     },
 
     "model": {
         "KRR": {
             "gamma": 3.0,
-            "sigma": 0.0001
+            "sigma": 0.01
         },
         
         "local_pca": {

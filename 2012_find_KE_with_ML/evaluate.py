@@ -1,4 +1,4 @@
-import numpy as np 
+import numpy as np
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from autograd import grad
@@ -32,8 +32,8 @@ def main(config):
     n_components = config['model']['local_pca']['n_components']
     k_nearest = config['model']['local_pca']['k_nearest']
 
-    train_x = np.load(train_dir / 'features.npy')
-    train_ys = np.load(train_dir / 'targets.npy')
+    train_x = np.load(train_dir / 'features.npy')[:train_size]
+    train_ys = np.load(train_dir / 'targets.npy')[:train_size]
     train_y, train_dy = train_ys[:, 0], train_ys[:, 1:]
     test_x = np.load(test_dir / 'features.npy')
     test_ys = np.load(test_dir / 'targets.npy')
