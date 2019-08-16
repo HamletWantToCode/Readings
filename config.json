@@ -1,0 +1,23 @@
+{
+    "data": {
+        "train_dir": "/Users/hongbinren/Documents/Data/iop/burke/train",
+        "train_size": 500,
+        "test_dir": "/Users/hongbinren/Documents/Data/iop/burke/test"
+    },
+
+    "model": {
+        "KRR": {
+            "gamma": 3.0,
+            "sigma": 0.0001
+        },
+        
+        "local_pca": {
+            "n_components": 5,
+            "k_nearest": 30
+        }
+    },
+
+    "results": {
+        "save_dir": "./saved"
+    }
+}
